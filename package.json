@@ -1,0 +1,24 @@
+{
+  "name": "odin-tictactoe",
+  "version": "1.0.0",
+  "description": "A web-based implementation of the classic **Tic Tac Toe** game using **JavaScript**, following the **Factory Function** and **Module Pattern** architecture. Part of The Odin Project curriculum.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDotsss/odin-tictactoe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MrDotsss/odin-tictactoe/issues"
+  },
+  "homepage": "https://github.com/MrDotsss/odin-tictactoe#readme",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  }
+}
