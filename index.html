@@ -9,20 +9,39 @@
   </head>
   <body>
     <header>
-      <h1>Tic Tac Toe</h1>
-      <div class="button-group">
-        <button>Start Game</button>
+      <div class="scoreboard">
+        <div class="player-profile">
+          <h1 id="player-one-name">Player</h1>
+          <hr />
+          <h2>Score:</h2>
+        </div>
+        <div class="player-profile">
+          <h1 id="player-two-name">Player</h1>
+          <hr />
+          <h2>Score:</h2>
+        </div>
+      </div>
+      <div>
+        <h1 id="turn-message"></h1>
       </div>
     </header>
     <main>
       <div class="board-grid"></div>
+      <div class="result-overlay">
+        <h1>DRAW</h1>
+        <div class="button-group">
+          <button class="rematch-btn">Rematch</button>
+          <button class="restart-btn">New Game</button>
+        </div>
+      </div>
     </main>
-
+    <footer>
+      <p>Odin Project: Tic Tac Toe | <span>MrDotsss&#169; 2025</span></p>
+    </footer>
     <dialog id="start-menu">
       <section class="dialog-description">
         <h2>ODIN</h2>
         <h1 class="title">TIC ✖️ TAC ⭕ TOE</h1>
-
         <p>
           Two-player Tic Tac Toe game where players alternate turns marking
           spaces in a 3×3 grid. The first player to align three marks in a row
@@ -33,12 +52,26 @@
       <section>
         <form action="#" class="dialog-form">
           <div class="player-name">
-            <label for="player-one">Player </label>
-            <input type="text" name="player-one" id="player-one" required />
+            <label for="player-one">Name</label>
+            <input
+              type="text"
+              name="player-one"
+              id="player-one"
+              placeholder="One"
+              maxlength="8"
+              required
+            />
           </div>
           <div class="player-name">
-            <label for="player-two">Player </label>
-            <input type="text" name="player-two" id="player-two" required />
+            <label for="player-two">Name</label>
+            <input
+              type="text"
+              name="player-two"
+              id="player-two"
+              placeholder="Two"
+              maxlength="8"
+              required
+            />
           </div>
 
           <div class="submit-btn">
@@ -46,6 +79,17 @@
           </div>
         </form>
       </section>
+    </dialog>
+    <dialog id="result-dialog">
+      <h1 class="result-info">DRAW!</h1>
+      <div class="score-board">
+        <div class="player-one-score">0</div>
+        <div class="player-two-score">0</div>
+      </div>
+      <div class="button-group">
+        <button>Rematch</button>
+        <button>New Game</button>
+      </div>
     </dialog>
   </body>
 </html>
